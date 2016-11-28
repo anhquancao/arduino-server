@@ -6,7 +6,7 @@ module.exports = {
         figure.temp = req.body.temp;
         figure.humid = req.body.humid;
         figure.save(function (err, figure) {
-            if (err) throw err;
+            if (err) console.log(err);
             return res.json({message: "Thêm thông số thành công"});
         });
     },
